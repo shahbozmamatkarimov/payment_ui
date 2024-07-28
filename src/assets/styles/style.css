@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,8 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* ::-webkit-scrollbar{
-  width: 4px;
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/.Roboto.ttf") format("ttf");
+  font-style: normal;
+}
+
+* {
+  font-family: Roboto !important;
+}
+
+* ::-webkit-scrollbar {
+  width: 4px !important;
+  min-width: 4px !important;
   height: 0;
 }
 
@@ -30,6 +41,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -44,7 +56,7 @@ a:hover {
 }
 
 .selected_card {
-  border: 2px solid rgb(197,166,124);
+  border: 2px solid rgb(197, 166, 124);
   box-shadow: none !important;
 }
 
@@ -53,7 +65,7 @@ a:hover {
 }
 
 .success {
-  border: 2px solid rgb(197,166,124) !important;
+  border: 2px solid rgb(197, 166, 124) !important;
 }
 
 .r12 {
@@ -61,7 +73,7 @@ a:hover {
 }
 
 .recommend {
-  background: linear-gradient(270deg, rgba(226,194,153,1) 6%, rgba(197,166,124,1) 94%);
+  background: linear-gradient(270deg, rgba(226, 194, 153, 1) 6%, rgba(197, 166, 124, 1) 94%);
 }
 
 .cp {
@@ -106,9 +118,11 @@ body {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
