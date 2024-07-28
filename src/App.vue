@@ -171,7 +171,7 @@ export default defineComponent({
         v-else
         data-aos="zoom-in"
         data-aos-duration="800"
-        class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 max-h-[214px] p-[10px] pt-[15px] -mx-[10px] overflow-y-auto"
+        class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 max-h-[214px] p-[10px] mt-[15px] -mx-[10px] overflow-y-auto"
       >
         <li
           v-for="(i, index) in 30"
